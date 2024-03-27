@@ -78,11 +78,19 @@ initial begin
   end  
   #2222;
   for (i = 0; i < 16; i = i + 1) begin
+      write_enable[i] = 1'b0;  
+  end  
+  #4444;
+  for (i = 0; i < 16; i = i + 1) begin
       write_enable[i] = 1'b1;
       write_data[i] = 256'h4920;
       write_address[i] = 34'h0_0000_0020 + (i * 34'h0_2000_0000);
   end
   #2222;
+  for (i = 0; i < 16; i = i + 1) begin
+      write_enable[i] = 1'b0;  
+  end  
+  #4444;
   for (i = 0; i < 16; i = i + 1) begin
       write_enable[i] = 1'b1;
       write_data[i] = 256'h4921;
@@ -90,65 +98,109 @@ initial begin
   end
   #2222;
   for (i = 0; i < 16; i = i + 1) begin
+      write_enable[i] = 1'b0;  
+  end  
+  #4444;
+  for (i = 0; i < 16; i = i + 1) begin
       write_enable[i] = 1'b1;
       write_data[i] = 256'h4922;
       write_address[i] = 34'h0_0000_0060 + (i * 34'h0_2000_0000);
   end
-  #2222;  
+  #2222;
+  for (i = 0; i < 16; i = i + 1) begin
+      write_enable[i] = 1'b0;  
+  end  
+  #4444;
   for (i = 0; i < 16; i = i + 1) begin
       write_enable[i] = 1'b1;
       write_data[i] = 256'h4923;
-      //write_address[i] = 34'h0_0000_0080 + (i * 34'h0_2000_0000);
+      write_address[i] = 34'h0_0000_0080 + (i * 34'h0_2000_0000);
   end
-  #2222; 
+  #2222;
+  for (i = 0; i < 16; i = i + 1) begin
+      write_enable[i] = 1'b0;  
+  end  
+  #4444;
   for (i = 0; i < 16; i = i + 1) begin
       write_enable[i] = 1'b1;
       write_data[i] = 256'h4924;
       write_address[i] = 34'h0_0000_00a0 + (i * 34'h0_2000_0000);
   end
-  #2222;  
+  #2222;
+  for (i = 0; i < 16; i = i + 1) begin
+      write_enable[i] = 1'b0;  
+  end  
+  #4444; 
   for (i = 0; i < 16; i = i + 1) begin
       write_enable[i] = 1'b1;
       write_data[i] = 256'h4925;
       write_address[i] = 34'h0_0000_00c0 + (i * 34'h0_2000_0000);
   end
-  #2222; 
+  #2222;
+  for (i = 0; i < 16; i = i + 1) begin
+      write_enable[i] = 1'b0;  
+  end  
+  #4444;
   for (i = 0; i < 16; i = i + 1) begin
       write_enable[i] = 1'b1;
       write_data[i] = 256'h4926;
       write_address[i] = 34'h0_0000_00e0 + (i * 34'h0_2000_0000);
   end
-  #2222;   
+  #2222;
+  for (i = 0; i < 16; i = i + 1) begin
+      write_enable[i] = 1'b0;  
+  end  
+  #4444;   
   for (i = 0; i < 16; i = i + 1) begin
       write_enable[i] = 1'b1;
       write_data[i] = 256'h4927;
       write_address[i] = 34'h0_0000_0100 + (i * 34'h0_2000_0000);
   end
-  #2222;    
+  #2222;
+  for (i = 0; i < 16; i = i + 1) begin
+      write_enable[i] = 1'b0;  
+  end  
+  #4444;    
   for (i = 0; i < 16; i = i + 1) begin
       write_enable[i] = 1'b1;
       write_data[i] = 256'h4928;
       write_address[i] = 34'h0_0000_0120 + (i * 34'h0_2000_0000);
   end
-  #2222;  
+  #2222;
+  for (i = 0; i < 16; i = i + 1) begin
+      write_enable[i] = 1'b0;  
+  end  
+  #4444;  
   for (i = 0; i < 16; i = i + 1) begin
       write_enable[i] = 1'b1;
       write_data[i] = 256'h4929;
       write_address[i] = 34'h0_0000_0140 + (i * 34'h0_2000_0000);
   end
-  #2222;  
+  #2222;
+  for (i = 0; i < 16; i = i + 1) begin
+      write_enable[i] = 1'b0;  
+  end  
+  #4444;  
   for (i = 0; i < 16; i = i + 1) begin
       write_enable[i] = 1'b1;
       write_data[i] = 256'h4930;
       write_address[i] = 34'h0_0000_0160 + (i * 34'h0_2000_0000);
   end
-  #2222;  
+  #2222;
+  for (i = 0; i < 16; i = i + 1) begin
+      write_enable[i] = 1'b0;  
+  end  
+  #4444;
   for (i = 0; i < 16; i = i + 1) begin
       write_enable[i] = 1'b1;
       write_data[i] = 256'h4931;
       write_address[i] = 34'h0_0000_0180 + (i * 34'h0_2000_0000);
   end
-  #2222;  
+  #2222;
+  for (i = 0; i < 16; i = i + 1) begin
+      write_enable[i] = 1'b0;  
+  end  
+  #4444; 
   for (i = 0; i < 16; i = i + 1) begin
       write_enable[i] = 1'b1;
       write_data[i] = 256'h4932;
@@ -156,17 +208,29 @@ initial begin
   end
   #2222;
   for (i = 0; i < 16; i = i + 1) begin
+      write_enable[i] = 1'b0;  
+  end  
+  #4444;
+  for (i = 0; i < 16; i = i + 1) begin
       write_enable[i] = 1'b1;
       write_data[i] = 256'h4933;
       write_address[i] = 34'h0_0000_01c0 + (i * 34'h0_2000_0000);
   end
-  #2222;    
+  #2222;
+  for (i = 0; i < 16; i = i + 1) begin
+      write_enable[i] = 1'b0;  
+  end  
+  #4444;    
   for (i = 0; i < 16; i = i + 1) begin
       write_enable[i] = 1'b1;
       write_data[i] = 256'h4934;
       write_address[i] = 34'h0_0000_01e0 + (i * 34'h0_2000_0000);
   end
-  #2222;  
+  #2222;
+  for (i = 0; i < 16; i = i + 1) begin
+      write_enable[i] = 1'b0;  
+  end  
+  #4444;  
   for (i = 0; i < 16; i = i + 1) begin
       write_enable[i] = 1'b0;
   end      
